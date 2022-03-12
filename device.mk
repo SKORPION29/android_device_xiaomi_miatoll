@@ -14,6 +14,20 @@ $(call inherit-product-if-exists, vendor/xiaomi/miatoll/miatoll-vendor.mk)
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH)
 
+#GBOARD
+PRODUCT_PACKAGES += \
+	Gboard
+    
+#KERNEL
+TARGET_PREBUILT_KERNEL := device/xiaomi/miatoll/prebuilt/kernel/Image.gz
+TARGET_PREBUILT_DTB := device/xiaomi/miatoll/prebuilt/kernel/dtb
+BOARD_PREBUILT_DTBOIMAGE := device/xiaomi/miatoll/prebuilt/kernel/dtbo.img
+
+PRODUCT_COPY_FILES += \
+	$(TARGET_PREBUILT_KERNEL):Image.gz-dtb \
+	$(TARGET_PREBUILT_DTB):dtb.img \
+	$(BOARD_PREBUILT_DTBOIMAGE):dtbo.img
+
 # Init scripts
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/rootdir/etc/init.device.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.device.rc
