@@ -19,14 +19,14 @@ PRODUCT_PACKAGES += \
 	Gboard
     
 #KERNEL
-TARGET_PREBUILT_KERNEL := device/xiaomi/miatoll/prebuilt/kernel/Image.gz
-TARGET_PREBUILT_DTB := device/xiaomi/miatoll/prebuilt/kernel/dtb
-BOARD_PREBUILT_DTBOIMAGE := device/xiaomi/miatoll/prebuilt/kernel/dtbo.img
+#TARGET_FORCE_PREBUILT_KERNEL := device/xiaomi/miatoll/prebuilts/kernel/Image.gz-dtb
+#TARGET_PREBUILT_DTB := device/xiaomi/miatoll/prebuilts/kernel/dtb
+#BOARD_PREBUILT_DTBOIMAGE := device/xiaomi/miatoll/prebuilts/kernel/dtbo.img
 
-PRODUCT_COPY_FILES += \
-	$(TARGET_PREBUILT_KERNEL):Image.gz-dtb \
-	$(TARGET_PREBUILT_DTB):dtb.img \
-	$(BOARD_PREBUILT_DTBOIMAGE):dtbo.img
+#PRODUCT_COPY_FILES += \
+#	$(TARGET_FORCE_PREBUILT_KERNEL):kernel \
+#	$(TARGET_PREBUILT_DTB):dtb.img \
+#	$(BOARD_PREBUILT_DTBOIMAGE):dtbo.img
 
 # Init scripts
 PRODUCT_COPY_FILES += \
