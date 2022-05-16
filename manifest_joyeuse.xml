@@ -16,7 +16,6 @@
             <name>INqNfc</name>
             <instance>default</instance>
         </interface>
-        <fqname>@2.0::INqNfc/default</fqname>
     </hal>
     <hal format="hidl">
         <name>vendor.nxp.nxpnfclegacy</name>
@@ -39,3 +38,4 @@
         <fqname>@1.2::ISecureElement/SIM1</fqname>
     </hal>
 </manifest>
+
