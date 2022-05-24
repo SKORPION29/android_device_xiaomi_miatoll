@@ -18,6 +18,9 @@ $(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
