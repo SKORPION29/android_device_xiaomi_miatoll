@@ -5,9 +5,9 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/blaze_miatoll.mk
+    $(LOCAL_DIR)/pixys_miatoll.mk
 
 COMMON_LUNCH_CHOICES := \
-    blaze_miatoll-user \
-    blaze_miatoll-userdebug \
-    blaze_miatoll-eng
+    pixys_miatoll-user \
+    pixys_miatoll-userdebug \
+    pixys_miatoll-eng

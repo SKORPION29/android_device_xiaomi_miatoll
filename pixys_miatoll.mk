@@ -13,20 +13,15 @@
 # limitations under the License.
 
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
-$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
-
-# Blaze Official Stuff
-BLAZE_BUILD_TYPE := OFFICIAL
-BLAZE_MAINTAINER := Sayan Sarkar(@SKORPION_29)
-TARGET_USE_PIXEL_CHARGER := true
+$(call inherit-product, vendor/pixys/config/common_full_phone.mk)
 
 # Face Unlock
-TARGET_FACE_UNLOCK_SUPPORTED=true
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := blaze_miatoll
+PRODUCT_NAME := pixys_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := SM6250
