@@ -15,6 +15,9 @@
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
 $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
+# VoltageOS Official Stuff
+VOLTAGE_BUILD_TYPE := OFFICIAL
+
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
