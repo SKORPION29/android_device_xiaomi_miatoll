@@ -13,21 +13,23 @@
 # limitations under the License.
 
 $(call inherit-product, device/xiaomi/miatoll/device.mk)
-$(call inherit-product, vendor/blaze/config/common_full_phone.mk)
-
-# Blaze Official Stuff
-BLAZE_BUILD_TYPE := OFFICIAL
-BLAZE_MAINTAINER := SKORPION_29
-TARGET_USE_PIXEL_CHARGER := true
-TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Face Unlock
 TARGET_FACE_UNLOCK_SUPPORTED := true
 
+# Maintainer
+RICE_MAINTAINER := SKORPION_29
+
+# Quick Tap
+TARGET_SUPPORTS_QUICK_TAP := true
+
+WITH_GAPPS := true
+
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
-PRODUCT_NAME := blaze_miatoll
+PRODUCT_NAME := lineage_miatoll
 PRODUCT_DEVICE := miatoll
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := SM6250
