@@ -27,6 +27,8 @@ TARGET_SUPPORTS_QUICK_TAP := true
 WITH_GMS := true
 SHIP_ANX := true
 
+SUSHI_BOOTANIMATION := 1080
+
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
