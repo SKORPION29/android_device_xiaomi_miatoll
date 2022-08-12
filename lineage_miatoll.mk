@@ -24,7 +24,7 @@ RICE_MAINTAINER := SKORPION_29
 # Quick Tap
 TARGET_SUPPORTS_QUICK_TAP := true
 
-WITH_GAPPS := true
+WITH_GMS := true
 SHIP_ANX := true
 
 # Bootanimation Resolution
