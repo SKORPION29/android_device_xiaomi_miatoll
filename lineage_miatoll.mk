@@ -29,6 +29,9 @@ SHIP_ANX := true
 
 SUSHI_BOOTANIMATION := 1080
 
+# Blur
+TARGET_ENABLE_BLUR := true
+
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
