@@ -10,6 +10,11 @@ $(call inherit-product, device/xiaomi/miatoll/device.mk)
 # Inherit some common ProjectBlaze stuff
 $(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 
+# ProjectBlaze Official stuff
+BLAZE_BUILD_TYPE := OFFICIAL
+BLAZE_MAINTAINER := SKORPION_29
+TARGET_USE_PIXEL_CHARGER := true
+
 TARGET_BOOT_ANIMATION_RES := 1080
 
 # Device identifier
