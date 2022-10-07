@@ -13,6 +13,9 @@ $(call inherit-product, vendor/blaze/config/common_full_phone.mk)
 # Bootanimation Resolution
 TARGET_BOOT_ANIMATION_RES := 1080
 
+# Blur
+TARGET_SUPPORTS_BLUR := true
+
 # NGA
 TARGET_SUPPORTS_NEXT_GEN_ASSISTANT := true
 
